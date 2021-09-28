@@ -1,24 +1,11 @@
-# README
+<h1>RecoTest</h1>
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Aplicación web desarrollada en Ruby on Rails y Javascript (Jquery, AJAX). Permite registrar usuarios, crear alertas y visualizar datos consumidos desde API de recorrido.cl. 
 
-Things you may want to cover:
 
-* Ruby version
+Requerimientos:
 
-* System dependencies
+* Ruby versión 3.0.2
 
-* Configuration
+* Rails versión 6.0.4.1
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
