@@ -1,7 +1,7 @@
 <h1>RecoTest</h1>
 
 <p>Recotest es una aplicación web que permite registrar usuarios, crear alertas y visualizar datos consumidos desde API de recorrido.cl.</p>
-<p>Las alertas configuradas consultan la informacion de viajes disponibles para los proximos 7 días. Esta informacion se actualiza cada 5 minutos a traves de solicitudes AJAX.</p>
+<p>Las alertas configuradas consultan la informacion de viajes disponibles para los proximos 7 días. Esta informacion se actualiza cada 5 minutos a traves de solicitudes AJAX en el cliente y Typhoeus desde el lado del servidor.</p>
 
 
 <h2>Requisitos 📋</h2>
