@@ -1,0 +1,44 @@
+<%= form_with(model: alert, local: true) do |form| %>
+  <% if alert.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(alert.errors.count, "error") %> prohibited this alert from being saved:</h2>
+
+      <ul>
+        <% alert.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :Nombre_de_la_alerta %>
+    <%= form.text_field :name_alert %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Origen %>
+    <%= form.select :from_alert, @list_cities.map{|value| [value[1],value[0]]} %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Destino %>
+    <%= form.select :to_alert, @list_cities.map{|value| [value[1],value[0]]} %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Clase %>
+    <%= form.collection_select :class_alert, @class_services, :id,:title %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Precio, "Precio Máximo"  %>
+    <%= form.number_field :price_alert %>
+  </div>
+
+
+
+  <div class="actions">
+    <%= form.submit "Guardar Alerta", class: "btn btn-outline-primary"%>
+  </div>
+<% end %>

@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name_alert: MyString
+  from_alert: MyString
+  to_alert: MyString
+  class_alert: 1
+  price_alert: 1
+  user_id: 1
+
+two:
+  name_alert: MyString
+  from_alert: MyString
+  to_alert: MyString
+  class_alert: 1
+  price_alert: 1
+  user_id: 1

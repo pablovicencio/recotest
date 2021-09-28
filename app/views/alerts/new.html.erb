@@ -1,0 +1,12 @@
+<div class="large-container center-block margin-top">
+    <h1>Nueva alerta</h1>
+
+    <div class="alert alert-primary alert-dismissible fade show" role="alert">
+        Ingresa un nombre, el origen, destino, la clase en la que deseas viajar y el precio máximo para realizar la busqueda y crear tu alerta!
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+
+    <%= render 'form', alert: @alert %>
+
+    <%= link_to 'Volver', alerts_path , class: "btn btn-outline-secondary"%>
+</div>
